@@ -14,7 +14,7 @@ class AuthController extends Controller
         $request->validate([
             'username' => 'required|string|max:255',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6'
+            'password' => 'required'
         ]);
 
         $user = User::create([
@@ -25,7 +25,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return response()->json(['success' => true, 'redirect' => '/login']);
+        return response()->json(['success' => true, 'redirect' => '/']);
     }
 
     public function LoginUser(Request $request)
