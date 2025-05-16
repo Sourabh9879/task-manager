@@ -1,7 +1,7 @@
 # Task Manager
 
 **Laravel Version:**  
-This project uses Laravel 10.
+This project uses Laravel 12.
 
 ## Setup
 
