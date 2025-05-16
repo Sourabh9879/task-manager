@@ -23,11 +23,11 @@ DB_PASSWORD=
 
 ## App Structure & Features
 
-- app/Controller :- all controller file
-- app/Model :- User And Task Model
+- app/http/Controller :- all controller file
+- app/http/Model :- User And Task Model
 - app/database/migrations :- all the migration files used
 - Routes are set up in `routes/web.php`.
 - Blade templates for the UI are in `resources/views`.
 - logged-in users can manage tasks.
 - You can add, edit, delete, and search tasks. Each task has a title, description, due date and status.
-- usesd Bootstrap for styling and jQuery for AJAX.
+- used Bootstrap for styling and jQuery for AJAX.
